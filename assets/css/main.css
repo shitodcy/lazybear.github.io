@@ -817,3 +817,49 @@ section,
   margin-left: 70px; /* Geser ke kanan */
 }
 
+/*--------------------------------------------------------------
+# status availabe freelance
+--------------------------------------------------------------*/
+.status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #424553;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #43b581; /* Warna hijau seperti status "Online" di Discord */
+  border-radius: 50%;
+  position: relative;
+}
+
+.status-indicator::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(67, 181, 129, 0.5);
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.5);
+      opacity: 0;
+  }
+}
