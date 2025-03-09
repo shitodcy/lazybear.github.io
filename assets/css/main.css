@@ -1,15 +1,3 @@
-/**
-* Template Name: igalery
-* Template URL: https://bootstrapmade.com/igalery-bootstrap-galery-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -629,16 +617,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# galery Section
+# certificate Section
 --------------------------------------------------------------*/
-.galery .galery-filters {
+.certificate .certificate-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.galery .galery-filters li {
+.certificate .certificate-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -651,12 +639,12 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.galery .galery-filters li:hover,
-.galery .galery-filters li.filter-active {
+.certificate .certificate-filters li:hover,
+.certificate .certificate-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.galery-info {
+.certificate-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -690,11 +678,11 @@ section,
   font-weight: bold;
 }
 
-.galery-content:hover .galery-info {
+.certificate-content:hover .certificate-info {
   opacity: 1;
 }
 
-.galery-content img {
+.certificate-content img {
   width: 100%; /* Mengisi lebar container */
   height: 250px; /* Sesuaikan tinggi agar semua sama */
   object-fit: cover; /* Mencegah gambar terdistorsi */
