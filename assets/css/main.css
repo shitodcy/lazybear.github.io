@@ -656,89 +656,56 @@ section,
   color: var(--accent-color);
 }
 
-.certificate .certificate-filters li:first-child {
-  margin-left: 0;
-}
-
-.certificate .certificate-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .certificate .certificate-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
-
-.certificate .certificate-content {
-  position: relative;
-  overflow: hidden;
-}
-
-.certificate .certificate-content img {
-  transition: 0.3s;
-}
-
-.certificate .certificate-content .certificate-info {
-  opacity: 0;
+.certificate-info {
   position: absolute;
-  inset: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-}
-
-.certificate .certificate-content .certificate-info h4 {
-  font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
-  color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
-}
-
-.certificate .certificate-content .certificate-info p {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.certificate .certificate-content .certificate-info .preview-link,
-.certificate .certificate-content .certificate-info .details-link {
-  position: absolute;
-  left: calc(50% - 40px);
-  font-size: 26px;
-  top: calc(50% - 14px);
-  color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
-}
-
-.certificate .certificate-content .certificate-info .preview-link:hover,
-.certificate .certificate-content .certificate-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.certificate .certificate-content .certificate-info .details-link {
+  top: 50%;
   left: 50%;
-  font-size: 34px;
-  line-height: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.certificate .certificate-content:hover .certificate-info {
+.preview-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.preview-link i {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.view-details-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.certificate-content:hover .certificate-info {
   opacity: 1;
 }
 
-.certificate .certificate-content:hover img {
-  transform: scale(1.1);
+.certificate-content img {
+  width: 100%; /* Mengisi lebar container */
+  height: 250px; /* Sesuaikan tinggi agar semua sama */
+  object-fit: cover; /* Mencegah gambar terdistorsi */
+  border-radius: 6px; /* Opsional: Membuat sudut lebih halus */
+}
+
+
+.isotope-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Jarak antar gambar */
 }
 
 /*--------------------------------------------------------------
