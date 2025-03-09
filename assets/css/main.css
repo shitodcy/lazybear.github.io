@@ -1,6 +1,6 @@
 /**
-* Template Name: icertificate
-* Template URL: https://bootstrapmade.com/icertificate-bootstrap-certificate-websites-template/
+* Template Name: igalery
+* Template URL: https://bootstrapmade.com/igalery-bootstrap-galery-websites-template/
 * Updated: Jun 29 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -629,16 +629,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# certificate Section
+# galery Section
 --------------------------------------------------------------*/
-.certificate .certificate-filters {
+.galery .galery-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.certificate .certificate-filters li {
+.galery .galery-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -651,12 +651,12 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.certificate .certificate-filters li:hover,
-.certificate .certificate-filters li.filter-active {
+.galery .galery-filters li:hover,
+.galery .galery-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.certificate-info {
+.galery-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -690,11 +690,11 @@ section,
   font-weight: bold;
 }
 
-.certificate-content:hover .certificate-info {
+.galery-content:hover .galery-info {
   opacity: 1;
 }
 
-.certificate-content img {
+.galery-content img {
   width: 100%; /* Mengisi lebar container */
   height: 250px; /* Sesuaikan tinggi agar semua sama */
   object-fit: cover; /* Mencegah gambar terdistorsi */
