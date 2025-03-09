@@ -701,7 +701,6 @@ section,
   border-radius: 6px; /* Opsional: Membuat sudut lebih halus */
 }
 
-
 .isotope-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
