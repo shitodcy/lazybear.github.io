@@ -731,6 +731,11 @@ section,
   align-items: center;
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Jarak antara teks dan status */
+}
 /* Animasi RGB */
 @keyframes rgbBorder {
   0% { background-position: 0% 50%; }
