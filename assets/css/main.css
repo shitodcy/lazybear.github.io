@@ -118,30 +118,6 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .social-links {
-  margin: 0 0 20px 0;
-}
-
-.header .social-links a {
-  font-size: 16px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
-  margin: 0 2px;
-  border-radius: 50%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  transition: 0.3s;
-}
-
-.header .social-links a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
 @media (min-width: 1200px) {
 
   .header~main,
@@ -463,23 +439,6 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.home .social-links {
-  margin-top: 25px;
-}
-
-.home .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
-
-.home .social-links a:hover {
-  color: var(--accent-color);
-}
-
 @media (max-width: 768px) {
   .home h2 {
     font-size: 32px;
@@ -796,4 +755,54 @@ section,
       width: 100vw;  /* Mengisi seluruh lebar viewport */
       height: auto;
   }
+}
+
+/*--------------------------------------------------------------
+# social links
+--------------------------------------------------------------*/
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;  /* Ukuran lingkaran */
+  height: 20px;
+  
+  background-color: #444; /* Warna default */
+  color: white; /* Warna ikon default */
+  font-size: 24px; /* Ukuran ikon */
+  text-decoration: none;
+
+  text-decoration: none;
+  margin: 0 4px; /* Spasi antar ikon */
+}
+
+/* Hover warna sesuai dengan brand */
+.telegram:hover {
+  border-radius: 50%;
+  background-color: white;
+  color: #0088cc;
+}
+
+.discord:hover {
+  color: #5865F2;
+  background-color: transparent;
+}
+
+
+.instagram:hover {
+  border-radius: 6%;
+  background-color: #E4405F;
+  color: white;
+}
+
+.github:hover {
+  border-radius: 50%;
+  background-color: white;
+  color: #171515;
+}
+
+.linkedin:hover {
+  border-radius: 10%;
+  background-color: white;
+  color: #0077B5;
 }
